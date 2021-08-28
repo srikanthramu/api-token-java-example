@@ -71,6 +71,8 @@ public class JWSExample implements Token {
 
 			// JWT Header
 			jws.setKeyIdHeaderValue(rsaJsonWebKey.getKeyId());
+			// Whether good or bad, JWS provides various algorithms to choose from.
+			// Below is one option however refer https://datatracker.ietf.org/doc/html/rfc7518#section-4.1 for complete list
 			jws.setAlgorithmHeaderValue(AlgorithmIdentifiers.RSA_USING_SHA256);
 
 			// JWT Claims

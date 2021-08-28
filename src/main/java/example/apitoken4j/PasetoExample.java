@@ -56,6 +56,10 @@ public class PasetoExample implements Token {
 	// An user or a service is the bearer of the token
 	public String create() {
 
+		// The choice of Algorithms depends on the Versions chosen. 
+		// V1 used below is just an example, there are other versions and algorithms to choose from.
+		// Refer https://paseto.io/rfc/ various choices
+		// Purpose PUBLIC is chosen to demonstrate public-key digital signatures 
 		String paseto = Pasetos.V1.PUBLIC.builder()
 				// Key
 				.setPrivateKey(keyPair.getPrivate())
