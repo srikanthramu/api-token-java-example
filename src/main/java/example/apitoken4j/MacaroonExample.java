@@ -17,9 +17,9 @@ import com.github.nitram509.jmacaroons.verifier.TimestampCaveatVerifier;
 // Refer to their respective terms of use.  
 
 /**
- * Example to generate Macaroon using https://github.com/nitram509/jmacaroons,
+ * Example to generate Macaroons using https://github.com/nitram509/jmacaroons,
  * There are similar libraries, refer to http://macaroons.io/ 
- * For Macaroon specification, refer https://research.google/pubs/pub41892/
+ * For Macaroons specification, refer https://research.google/pubs/pub41892/
  * https://github.com/rescrv/libmacaroons/blob/master/README
  *
  */
@@ -51,7 +51,7 @@ public class MacaroonExample implements Token {
 		System.out.println("Token Verification: " + verify);
 	}
 
-	// Example for generating Macaroon
+	// Example for generating Macaroons
 	public String create() {
 		String location = TokenConstants.AUDIENCE;
 		Macaroon macaroon = new MacaroonsBuilder(location, secretKey, identifier)
@@ -63,7 +63,7 @@ public class MacaroonExample implements Token {
 		return macaroonStr;
 	}
 
-	// Example to verify Macaroon
+	// Example to verify Macaroons
 	public boolean verify(String token) {
 		Macaroon macaroon = MacaroonsBuilder.deserialize(token);
 		MacaroonsVerifier verifier = new MacaroonsVerifier(macaroon);

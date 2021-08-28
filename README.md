@@ -8,6 +8,10 @@ Inspired by a post titled `API Tokens: A Tedious Survey` - https://fly.io/blog/a
 ## Tokens covered
 | Number | Token |
 |:--------|:----------|
+| 1 | [JWT - JWS](https://github.com/srikanthramu/api-token-java-example/blob/main/src/main/java/example/apitoken4j/JWSExample.java) |
+| 2 | [Paseto](https://github.com/srikanthramu/api-token-java-example/blob/main/src/main/java/example/apitoken4j/PasetoExample.java) |
+| 3 | [Macaroons](https://github.com/srikanthramu/api-token-java-example/blob/main/src/main/java/example/apitoken4j/MacaroonExample.java) |
+| 4 | [Biscuit] |
 
 ## Disclaimer
 Use at your own risk as these examples are for learning purpose only. The points discussed comes with no warranty and no claims on the accuracy is made. 
